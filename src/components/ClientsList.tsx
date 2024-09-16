@@ -1,16 +1,15 @@
-// src/components/ClientsList.tsx
 import React, { useEffect, useState } from 'react';
 import { fetchClients } from '../api/clientsApi';
-import { Client } from '../types/types'; // Import the Client type
+import { Client } from '../types/types'; 
 
 const ClientsList: React.FC = () => {
-  const [clients, setClients] = useState<Client[]>([]); // Initialize state with the correct type
+  const [clients, setClients] = useState<Client[]>([]); 
 
   useEffect(() => {
     const getClients = async () => {
       try {
         const data = await fetchClients();
-        setClients(data); // TypeScript now knows that data is of type Client[]
+        setClients(data); 
       } catch (error) {
         console.error('Failed to fetch clients:', error);
       }
@@ -23,7 +22,7 @@ const ClientsList: React.FC = () => {
     <ul>
       {clients.map((client) => (
         <li key={client.id}>
-          {client.name} - {client.address}
+          {client.givenName} 
         </li>
       ))}
     </ul>

@@ -1,4 +1,3 @@
-// src/features/sites/sitesSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../../app/store';
 

@@ -1,32 +1,92 @@
-/* src/styles/SiteDetails.css */
 .site-details {
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-  }
-  
-  .site-details-image {
-    width: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .site-details h1 {
-    margin: 0 0 10px 0;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .site-details p {
-    margin: 5px 0;
-    color: #555;
-  }
-  
-  .site-details p strong {
-    color: #3498db;
-  }
-  
+  padding: 16px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+
+.site-details-header {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  padding: 16px;
+  border-radius: 8px;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+}
+
+.site-details-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.site-header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-details-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.site-details-address,
+.site-details-contact {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #e1e1e1;
+}
+
+.site-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #007bff;
+}
+
+.contact-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact-job-title,
+.contact-link,
+.contact-address {
+  font-size: 14px;
+  color: #666;
+}
